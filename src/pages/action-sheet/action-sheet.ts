@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ActionSheetController } from 'ionic-angular';
+import { IonicPage, NavParams, NavController, ActionSheetController } from 'ionic-angular';
 
 
 @IonicPage()
@@ -8,10 +8,13 @@ import { IonicPage, NavController, NavParams, ActionSheetController } from 'ioni
   templateUrl: 'action-sheet.html',
 })
 export class ActionSheetPage {
-
+  uiComponentInfo: {note:string, path:string};
   constructor(
-    public actionSheetCtrl: ActionSheetController
+    public navCtrl: NavController, 
+    public actionSheetCtrl: ActionSheetController,
+    public navParams: NavParams
   ) {
+    this.uiComponentInfo = navParams.get('info');    
   }
 
   presentActionSheet() {

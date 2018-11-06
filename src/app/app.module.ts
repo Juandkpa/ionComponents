@@ -8,6 +8,8 @@ import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 import { UiComponentsPage } from '../pages/ui-components/ui-components';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
+import { AlertPage } from '../pages/alert/alert';
+import { UiComponentNoteComponent } from '../components/ui-component-note/ui-component-note';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,20 +21,24 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ItemDetailsPage,
     ListPage,
     UiComponentsPage,
-    ActionSheetPage    
-  ],
+    ActionSheetPage,
+    AlertPage,
+    UiComponentNoteComponent
+  ],    
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-  ],
-  bootstrap: [IonicApp],
+  ],          
+  bootstrap: [IonicApp],  
   entryComponents: [
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
     UiComponentsPage,    
-    ActionSheetPage
+    ActionSheetPage,
+    AlertPage,
+    UiComponentNoteComponent
   ],
   providers: [
     StatusBar,
