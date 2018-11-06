@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Ionic Ui Components</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let uiComponent of uiComponents" (click)="uiComponentTapped($event, uiComponent)">
+      <ion-icon name="{{uiComponent.icon}}" item-left></ion-icon>
+      <div>
+          <strong>{{uiComponent.title}}</strong>
+      </div>      
+      <div class="item-note" item-right>
+        {{uiComponent.note}}
+      </div>
+    </button>
+  </ion-list>
+</ion-content>
+
