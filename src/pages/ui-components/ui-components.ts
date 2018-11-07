@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ActionSheet } from 'ionic-angular';
 import { ActionSheetPage } from '../action-sheet/action-sheet';
 import { AlertPage } from '../alert/alert';
+import { SlidesPage } from '../slides/slides';
+import { ToastPage } from '../toast/toast';
 /**
  * Generated class for the UiComponentsPage page.
  *
@@ -33,6 +35,19 @@ export class UiComponentsPage {
           icon : 'flask',
           component : AlertPage,
           path: 'alert'
+        },
+        {
+          title: 'Slides',
+          note : 'It is a Slide',
+          icon : 'flask',
+          component : SlidesPage,
+          path: 'slide'
+        },        {
+          title: 'Toast',
+          note : 'Son mensajitos cool que salen desde arriba',
+          icon : 'flask',
+          component : ToastPage,
+          path: 'toast'
         }
       ];
 

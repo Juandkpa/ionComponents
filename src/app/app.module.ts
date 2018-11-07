@@ -10,6 +10,8 @@ import { UiComponentsPage } from '../pages/ui-components/ui-components';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertPage } from '../pages/alert/alert';
 import { UiComponentNoteComponent } from '../components/ui-component-note/ui-component-note';
+import { SlidesPage } from '../pages/slides/slides';
+import { ToastPage } from '../pages/toast/toast';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,7 +25,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     UiComponentsPage,
     ActionSheetPage,
     AlertPage,
-    UiComponentNoteComponent
+    UiComponentNoteComponent,
+    SlidesPage,
+    ToastPage
   ],    
   imports: [
     BrowserModule,
@@ -38,7 +42,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     UiComponentsPage,    
     ActionSheetPage,
     AlertPage,
-    UiComponentNoteComponent
+    UiComponentNoteComponent,
+    SlidesPage,
+    ToastPage
   ],
   providers: [
     StatusBar,
