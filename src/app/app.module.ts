@@ -9,6 +9,7 @@ import { ListPage } from '../pages/list/list';
 import { UiComponentsPage } from '../pages/ui-components/ui-components';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertPage } from '../pages/alert/alert';
+import { FabsPage } from '../pages/fabs/fabs';
 import { UiComponentNoteComponent } from '../components/ui-component-note/ui-component-note';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -23,6 +24,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     UiComponentsPage,
     ActionSheetPage,
     AlertPage,
+    FabsPage,
     UiComponentNoteComponent
   ],    
   imports: [
@@ -38,6 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     UiComponentsPage,    
     ActionSheetPage,
     AlertPage,
+    FabsPage,
     UiComponentNoteComponent
   ],
   providers: [

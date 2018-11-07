@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ActionSheet } from 'ionic-angular';
 import { ActionSheetPage } from '../action-sheet/action-sheet';
 import { AlertPage } from '../alert/alert';
+import { FabsPage } from '../fabs/fabs';
 /**
  * Generated class for the UiComponentsPage page.
  *
@@ -33,6 +34,13 @@ export class UiComponentsPage {
           icon : 'flask',
           component : AlertPage,
           path: 'alert'
+        },
+        {
+          title: 'FABs',
+          note : 'Tienen forma de círculo que representa una acción promovida. Cuando se presiona, puede contener más acciones relacionadas..',
+          icon : 'flask',
+          component : FabsPage,
+          path: 'fabs'
         }
       ];
 
