@@ -14,8 +14,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'fabs.html',
 })
 export class FabsPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  uiComponentInfo: {note:string, path:string};
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams){
+    this.uiComponentInfo = navParams.get('info');    
   }
 
   ionViewDidLoad() {

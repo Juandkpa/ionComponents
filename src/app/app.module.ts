@@ -12,6 +12,7 @@ import { AlertPage } from '../pages/alert/alert';
 import { FabsPage } from '../pages/fabs/fabs';
 import { SlidesPage } from '../pages/slides/slides';
 import { ToastPage } from '../pages/toast/toast';
+import { LoadingPage } from '../pages/loading/loading';
 import { UiComponentNoteComponent } from '../components/ui-component-note/ui-component-note';
 
 
@@ -30,6 +31,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FabsPage,
     SlidesPage,
     ToastPage,
+    LoadingPage,
     UiComponentNoteComponent
   ],    
   imports: [
@@ -48,6 +50,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FabsPage,
     SlidesPage,
     ToastPage,
+    LoadingPage,
     UiComponentNoteComponent
   ],
   providers: [

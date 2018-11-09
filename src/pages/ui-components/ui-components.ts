@@ -5,6 +5,7 @@ import { AlertPage } from '../alert/alert';
 import { FabsPage } from '../fabs/fabs';
 import { SlidesPage } from '../slides/slides';
 import { ToastPage } from '../toast/toast';
+import { LoadingPage } from '../loading/loading';
 /**
  * Generated class for the UiComponentsPage page.
  *
@@ -40,7 +41,7 @@ export class UiComponentsPage {
         {
           title: 'FABs',
           note : 'Tienen forma de círculo que representa una acción promovida. Cuando se presiona, puede contener más acciones relacionadas..',
-          icon : 'flask',
+          icon : 'brush',
           component : FabsPage,
           path: 'fabs'
         },
@@ -50,12 +51,20 @@ export class UiComponentsPage {
           icon : 'flask',
           component : SlidesPage,
           path: 'slides'
-        },        {
+        },        
+        {
           title: 'Toast',
           note : 'Son mensajitos cool que salen desde arriba, o abajo, o todas partes',
           icon : 'flask',
           component : ToastPage,
           path: 'toast'
+        },
+        {  
+          title: 'LOADING',
+          note : 'El componente de carga es una superposición que impide la interacción del usuario al tiempo que indica la actividad...',
+          icon : 'bulb',
+          component : LoadingPage,
+          path: 'loading'
         }
       ];
 
