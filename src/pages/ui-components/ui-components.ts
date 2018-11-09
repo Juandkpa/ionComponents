@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams, ActionSheet } from 'ionic-angular'
 import { ActionSheetPage } from '../action-sheet/action-sheet';
 import { AlertPage } from '../alert/alert';
 import { FabsPage } from '../fabs/fabs';
+import { SlidesPage } from '../slides/slides';
+import { ToastPage } from '../toast/toast';
 /**
  * Generated class for the UiComponentsPage page.
  *
@@ -41,6 +43,19 @@ export class UiComponentsPage {
           icon : 'flask',
           component : FabsPage,
           path: 'fabs'
+        },
+        {
+          title: 'Slides',
+          note : 'It is a Slide',
+          icon : 'flask',
+          component : SlidesPage,
+          path: 'slides'
+        },        {
+          title: 'Toast',
+          note : 'Son mensajitos cool que salen desde arriba, o abajo, o todas partes',
+          icon : 'flask',
+          component : ToastPage,
+          path: 'toast'
         }
       ];
 
@@ -51,3 +66,4 @@ export class UiComponentsPage {
   }
 
 }
+
