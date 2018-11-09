@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, ActionSheet } from 'ionic-angular'
 import { ActionSheetPage } from '../action-sheet/action-sheet';
 import { AlertPage } from '../alert/alert';
 import { FabsPage } from '../fabs/fabs';
+import { LoadingPage } from '../loading/loading';
 /**
  * Generated class for the UiComponentsPage page.
  *
@@ -38,9 +39,16 @@ export class UiComponentsPage {
         {
           title: 'FABs',
           note : 'Tienen forma de círculo que representa una acción promovida. Cuando se presiona, puede contener más acciones relacionadas..',
-          icon : 'flask',
+          icon : 'brush',
           component : FabsPage,
           path: 'fabs'
+        },
+        {
+          title: 'LOADING',
+          note : 'El componente de carga es una superposición que impide la interacción del usuario al tiempo que indica la actividad...',
+          icon : 'bulb',
+          component : LoadingPage,
+          path: 'loading'
         }
       ];
 
