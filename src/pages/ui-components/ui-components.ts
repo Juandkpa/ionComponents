@@ -41,10 +41,10 @@ export class UiComponentsPage {
           note : 'It is a Slide',
           icon : 'flask',
           component : SlidesPage,
-          path: 'slide'
+          path: 'slides'
         },        {
           title: 'Toast',
-          note : 'Son mensajitos cool que salen desde arriba',
+          note : 'Son mensajitos cool que salen desde arriba, o abajo, o todas partes',
           icon : 'flask',
           component : ToastPage,
           path: 'toast'

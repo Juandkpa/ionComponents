@@ -14,10 +14,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'slides.html',
 })
 export class SlidesPage {
+  uiComponentInfo: {note:string, path:string};
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams) {
+      this.uiComponentInfo = navParams.get('info');
+    }
   slides = [
     {
-      title: "Welcome to the Docs!",
-      description: "The <b>Ionic Component Documentation</b> showcases a number of useful components that are included out of the box with Ionic.",
+      title: "That's a Slide Component!",
+      description: "Slides make it easy to create galleries, tutorials, and page-based layouts. Slides take a number of configuration options on the <b>ion-slides</b> component. For more information, Check out the",
       image: "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2015/09/18/14425752089963.jpg",
     },
     {

@@ -17,8 +17,9 @@ export class ToastPage {
   uiComponentInfo: {note:string, path:string};
   constructor(public navCtrl: NavController, 
     public navParams: NavParams,
-    public toastCtrl: ToastController) {
-  }
+    public toastCtrl: ToastController){
+      this.uiComponentInfo = navParams.get('info');
+    }
 
   showToast(position: string) {
     let toast = this.toastCtrl.create({
