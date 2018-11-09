@@ -10,6 +10,8 @@ import { UiComponentsPage } from '../pages/ui-components/ui-components';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertPage } from '../pages/alert/alert';
 import { FabsPage } from '../pages/fabs/fabs';
+import { SearchBarPage } from '../pages/search-bar/search-bar'
+import { SegmentPage} from '../pages/segment/segment'
 import { UiComponentNoteComponent } from '../components/ui-component-note/ui-component-note';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -25,7 +27,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ActionSheetPage,
     AlertPage,
     FabsPage,
-    UiComponentNoteComponent
+    UiComponentNoteComponent,
+    SearchBarPage,
+    SegmentPage
   ],    
   imports: [
     BrowserModule,
@@ -41,7 +45,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ActionSheetPage,
     AlertPage,
     FabsPage,
-    UiComponentNoteComponent
+    UiComponentNoteComponent,
+    SearchBarPage,
+    SegmentPage
   ],
   providers: [
     StatusBar,

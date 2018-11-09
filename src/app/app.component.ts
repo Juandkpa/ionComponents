@@ -10,6 +10,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { UiComponentsPage } from '../pages/ui-components/ui-components';
 
 
+
 @Component({
   templateUrl: 'app.html'
 })
