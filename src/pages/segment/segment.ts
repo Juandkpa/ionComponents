@@ -14,8 +14,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'segment.html',
 })
 export class SegmentPage {
-
+  UiComponentsInfo: {note:string, path:string}
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.UiComponentsInfo = navParams.get('info');
   }
 
   ionViewDidLoad() {

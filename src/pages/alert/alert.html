@@ -1,16 +1,15 @@
 <ion-header>
     <ion-navbar>
-      <button menuToggle *ngIf="!selectedItem">
+        <button menuToggle *ngIf="!selectedItem">
         <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>Alerts</ion-title>
+        <ion-title>Alerts</ion-title>
     </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding>
-    <ui-component-note [info]="uiComponentInfo"></ui-component-note>
+</ion-header>
 
+<ion-content padding>
+    <ui-component-note [info]="uiComponentInfo"></ui-component-note>
     <button ion-button block small round color="dark" (click)="doBasicAlert()">Show Basic Alert</button>
     <button ion-button block small round color="secondary" (click)="doPromptAlert()">Show Prompt Alert</button>
-    <button ion-button block small round  (click)="doConfirmAlert()">Show Confirm Alert</button>
-  </ion-content>
+    <button ion-button block small round (click)="doConfirmAlert()">Show Confirm Alert</button>
+</ion-content>

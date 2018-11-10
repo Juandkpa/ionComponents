@@ -6,21 +6,55 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Segment</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <button menuToggle *ngIf="!selectedItem">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title>Segment</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <!-- Segment buttons with icons -->
-  <ion-segment [(ngModel)]="icons" color="secondary">
-      <ion-segment-button value="camera">
-        <ion-icon name="camera"></ion-icon>
-      </ion-segment-button>
-      <ion-segment-button value="bookmark">
-        <ion-icon name="bookmark"></ion-icon>
-      </ion-segment-button>
+    <div>
+        <ui-component-note [info]="uiComponentInfo"></ui-component-note>
+    </div>
+    <ion-segment [(ngModel)]="mislugares">
+        <ion-segment-button value="bogota">
+            <ion-title>Bogotá</ion-title>
+            <br />
+            <span>Bogotá</span>
+        </ion-segment-button>
+        <ion-segment-button value="medellin">
+            <ion-title>Medellín</ion-title>
+            <br />
+            <span>Medellín</span>
+        </ion-segment-button>
+        <ion-segment-button value="cartagena">
+            <ion-title>Cartagena</ion-title>
+            <br />
+            <span>Cartagena</span>
+        </ion-segment-button>
     </ion-segment>
+    <div [ngSwitch]="mislugares">
+        <ion-list *ngSwitchCase="'bogota'">
+            <ion-item>Monserrate</ion-item>
+            <ion-item>Museo del Oro</ion-item>
+            <ion-item>Museo Nacional</ion-item>
+            <ion-item>Jardín Botanico</ion-item>
+        </ion-list>
+        <ion-list *ngSwitchCase="'medellin'">
+            <ion-item>Jardin Botanico</ion-item>
+            <ion-item>Cerro de Nutibara</ion-item>
+            <ion-item>Plaza de Botero</ion-item>
+        </ion-list>
+        <ion-list *ngSwitchCase="'cartagena'">
+            <ion-item>Playas de Bocagrande</ion-item>
+            <ion-item>Barú</ion-item>
+            <ion-item>Museo de Infantería</ion-item>
+            <ion-item>Cerro de la Popa</ion-item>
+            <ion-item>Castillo de San Felipe</ion-item>
+        </ion-list>
+    </div>
 </ion-content>
