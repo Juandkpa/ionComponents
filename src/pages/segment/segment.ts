@@ -1,3 +1,4 @@
+import { UiComponentNoteComponent } from './../../components/ui-component-note/ui-component-note';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -14,8 +15,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'segment.html',
 })
 export class SegmentPage {
-
+  uiComponentInfo: {note:string,path:string};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.uiComponentInfo= navParams.get('info');
   }
 
   ionViewDidLoad() {

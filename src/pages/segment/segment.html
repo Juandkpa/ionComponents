@@ -5,22 +5,64 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Segment</ion-title>
-  </ion-navbar>
-
+    <ion-navbar>
+        <button menuToggle *ngIf="!selectedItem">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        <ion-title>Segment</ion-title>
+    </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
-  <!-- Segment buttons with icons -->
-  <ion-segment [(ngModel)]="icons" color="secondary">
-      <ion-segment-button value="camera">
-        <ion-icon name="camera"></ion-icon>
-      </ion-segment-button>
-      <ion-segment-button value="bookmark">
-        <ion-icon name="bookmark"></ion-icon>
-      </ion-segment-button>
+    <ui-component-note [info]="uiComponentInfo"></ui-component-note>
+    <ion-segment [(ngModel)]="mislugares">
+        <ion-segment-button value="bogota">
+            <ion-title>Bogotá</ion-title>
+            <br />
+            <span>Bogotá</span>
+        </ion-segment-button>
+        <ion-segment-button value="medellin">
+            <ion-title>Medellín</ion-title>
+            <br />
+            <span>Medellín</span>
+        </ion-segment-button>
+        <ion-segment-button value="cartagena">
+            <ion-title>Cartagena</ion-title>
+            <br />
+            <span>Cartagena</span>
+        </ion-segment-button>
     </ion-segment>
+    <div [ngSwitch]="mislugares">
+        <ion-list *ngSwitchCase="'bogota'">
+            <ion-item>
+                <ion-icon name="glasses" item-start></ion-icon>Monserrate</ion-item>
+            <ion-item>
+                <ion-icon name="glasses" item-start></ion-icon>Museo del Oro</ion-item>
+            <ion-item>
+                <ion-icon name="glasses" item-start></ion-icon>Jardín Botanico</ion-item>
+            <ion-item>
+                <ion-icon name="glasses" item-start></ion-icon>Museo Nacional</ion-item>
+        </ion-list>
+        <ion-list *ngSwitchCase="'medellin'">
+            <ion-item>
+                <ion-icon name="photos" item-start></ion-icon>Jardin Botanico</ion-item>
+            <ion-item>
+                <ion-icon name="photos" item-start></ion-icon>Cerro de Nutibara</ion-item>
+            <ion-item>
+                <ion-icon name="photos" item-start></ion-icon>Plaza de Botero</ion-item>
+        </ion-list>
+        <ion-list *ngSwitchCase="'cartagena'">
+            <ion-item>
+                <ion-icon name="help-buoy" item-start></ion-icon>Playas de Bocagrande</ion-item>
+            <ion-item>
+                <ion-icon name="help-buoy" item-start></ion-icon>Barú</ion-item>
+            <ion-item>
+                <ion-icon name="help-buoy" item-start></ion-icon>Museo de Infantería</ion-item>
+            <ion-item>
+                <ion-icon name="help-buoy" item-start></ion-icon>Cerro de la Popa</ion-item>
+            <ion-item>
+                <ion-icon name="help-buoy" item-start></ion-icon>Castillo de San Felipe</ion-item>
+        </ion-list>
+    </div>
 </ion-content>
