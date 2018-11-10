@@ -13,6 +13,8 @@ import { FabsPage } from '../pages/fabs/fabs';
 import { SlidesPage } from '../pages/slides/slides';
 import { ToastPage } from '../pages/toast/toast';
 import { LoadingPage } from '../pages/loading/loading';
+import { SearchBarPage } from '../pages/search-bar/search-bar'
+import { SegmentPage} from '../pages/segment/segment'
 import { UiComponentNoteComponent } from '../components/ui-component-note/ui-component-note';
 
 
@@ -32,7 +34,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SlidesPage,
     ToastPage,
     LoadingPage,
-    UiComponentNoteComponent
+    UiComponentNoteComponent,
+    SearchBarPage,
+    SegmentPage
   ],    
   imports: [
     BrowserModule,
@@ -51,7 +55,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SlidesPage,
     ToastPage,
     LoadingPage,
-    UiComponentNoteComponent
+    UiComponentNoteComponent,
+    SearchBarPage,
+    SegmentPage
   ],
   providers: [
     StatusBar,

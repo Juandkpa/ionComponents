@@ -6,6 +6,8 @@ import { FabsPage } from '../fabs/fabs';
 import { SlidesPage } from '../slides/slides';
 import { ToastPage } from '../toast/toast';
 import { LoadingPage } from '../loading/loading';
+import { SearchBarPage } from '../search-bar/search-bar'
+import { SegmentPage } from '../segment/segment'
 /**
  * Generated class for the UiComponentsPage page.
  *
@@ -65,6 +67,20 @@ export class UiComponentsPage {
           icon : 'bulb',
           component : LoadingPage,
           path: 'loading'
+        },
+        {
+          title: 'Search Bar',
+          note: 'Barra de búsqueda en la página',
+          icon: 'search',
+          component: SearchBarPage,
+          path: 'search-bar'
+        },
+        {
+          title: 'Segment',
+          note: 'Pestañas de navegación',
+          icon: 'bookmarks',
+          component: SegmentPage,
+          path: 'segment'
         }
       ];
 
